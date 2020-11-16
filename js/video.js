@@ -5,12 +5,15 @@ window.addEventListener("load", function() {
 });
 
 document.querySelector("#play").addEventListener("click", function() {
+	video.play()
 	console.log("Play Video");
 	var x = document.querySelector("#volumeSlider").value;
 	document.querySelector("#volume").innerHTML = x + '%'
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
+	video.pause()
+	console.log("Pause Video")
 	
 });
 
